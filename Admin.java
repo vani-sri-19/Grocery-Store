@@ -56,6 +56,11 @@ public class Admin implements Grocery_store {
         
     
     }
+     
+     public void delete(int pid){
+         
+         Products.remove(pid-1);
+     }
        
     
     
