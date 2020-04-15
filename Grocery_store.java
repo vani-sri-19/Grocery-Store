@@ -15,6 +15,7 @@ public interface Grocery_store {
     public void create();
     public void show();
     public Product choose_prod(int id);
+    public void delete(int id);
     
     
 }
