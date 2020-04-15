@@ -38,8 +38,16 @@ public class Admin implements Grocery_store {
     
     public void show()
     {
-        for(int i=0;i< Products.size();i++)
-            System.out.println(Products.get(i));
+        /*for(int i=0;i< Products.size();i++)
+            System.out.println(Products.get(i));*/
+        for(Product i : Products) {
+          System.out.println(
+                    i.get_pid() + ": " +
+                            i.get_product() + " " +
+                            i.get_cost() + "Rs " 
+                           
+            );
+    }
     }
     
      public Product choose_prod(int pid) {
