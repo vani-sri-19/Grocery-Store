@@ -47,6 +47,15 @@ public class Store {
             
             System.out.println("Enter quantity");
             qty=input.nextInt();
+            if(qty>5)
+            {
+               System.out.println("not available");
+                
+            }
+            else if(qty==5)
+            {
+                admin.delete(choice); 
+            }
              
             Bill b = new Bill();
             b.bi(obj,admin.choose_prod(choice),qty);
@@ -58,6 +67,7 @@ public class Store {
                 
         }while(c1=='y'); 
        
+              
        Bill bill_obj = new Bill();
        bill_obj.total_cost();
      
